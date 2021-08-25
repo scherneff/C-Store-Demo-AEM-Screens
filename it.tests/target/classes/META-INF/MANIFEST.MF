@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1629825111548
+Bundle-Category: program2
+Bundle-Description: "Bundles for Integration Tests for program2"
+Bundle-ManifestVersion: 2
+Bundle-Name: program2 - Integration Tests Bundles
+Bundle-SymbolicName: aem-program2-project.it.tests
+Bundle-Version: 0.0.1.20210824171151548
+Created-By: 11.0.8 (Oracle Corporation)
+Export-Package: com.program2.it.tests;version="1.0";uses:="org.apache.
+ sling.junit.annotations,org.junit,org.junit.runner"
+Import-Package: com.program2.core.models;version="[1.0,2)",org.apache.
+ sling.api.resource;version="[2.11,3)",org.apache.sling.junit.annotati
+ ons;version="[1.0,2)",org.apache.sling.settings;version="[1.3,2)",org
+ .junit;version="[4.8,5)",org.junit.runner;version="[4.8,5)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Sling-Test-Regexp: .*Test
+Tool: Bnd-4.2.0.201903051501
+

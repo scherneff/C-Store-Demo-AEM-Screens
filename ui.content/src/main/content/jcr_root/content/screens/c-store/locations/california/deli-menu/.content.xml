@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:cssClass="aem-Layout aem-Layout--1x1"
+        cq:designPath="/libs/settings/wcm/designs/screens"
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2021-01-08T09:54:39.126-08:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/c-store/templates/delimenu"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Deli Menu"
+        sling:resourceSuperType="screens/core/components/channel"
+        sling:resourceType="/apps/c-store/components/delimenuchannel"
+        forceRemoteContent="true">
+        <r1c1
+            cq:cssClass="aem-LayoutCell--1-1"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid_1398341665
+                jcr:created="{Date}2021-01-05T15:48:37.950-08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-01-05T15:48:37.950-08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="c-store/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="10"/>
+                </cq:responsive>
+                <image
+                    jcr:created="{Date}2021-01-05T15:48:57.932-08:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-01-06T11:25:27.963-08:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    fileReference="/content/dam/c-store/deli_header.png"
+                    width="800"/>
+            </responsivegrid_1398341665>
+            <responsivegrid
+                jcr:created="{Date}2021-01-05T15:47:33.280-08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-01-06T09:39:17.436-08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="c-store/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="5"/>
+                </cq:responsive>
+                <image
+                    jcr:created="{Date}2021-01-05T15:48:17.294-08:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-01-05T16:48:46.248-08:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    fileReference="/content/dam/c-store/deli_specialty.png"
+                    width="300">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="4"/>
+                    </cq:responsive>
+                </image>
+                <text
+                    jcr:created="{Date}2021-01-05T16:14:58.002-08:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-01-06T12:31:35.758-08:00"
+                    jcr:lastModifiedBy="test"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="c-store/components/text"
+                    text="&lt;h3 style=&quot;text-align: left;&quot;>Cowboy&lt;/h3>&#xd;&#xa;&lt;p style=&quot;text-align: left;&quot;>Dutch Crunch, Bacon, Chicken Breast, Provolone&lt;/p>&#xd;&#xa;&lt;h3 style=&quot;text-align: left;&quot;>Italian&lt;/h3>&#xd;&#xa;&lt;p style=&quot;text-align: left;&quot;>Sourdough, Salami, Mortadella, Capicola, Provolone&lt;/p>&#xd;&#xa;&lt;h3 style=&quot;text-align: left;&quot;>Westside&lt;/h3>&#xd;&#xa;&lt;p style=&quot;text-align: left;&quot;>Whole Wheat, Turkey, Avocado, Pesto Mayo, Cheddar&lt;/p>&#xd;&#xa;&lt;h3 style=&quot;text-align: left;&quot;>Porky&lt;/h3>&#xd;&#xa;&lt;p style=&quot;text-align: left;&quot;>Brioche, Pulled Pork, Portabello, BBQ Sauce&lt;/p>&#xd;&#xa;"
+                    textIsRich="true"/>
+            </responsivegrid>
+            <responsivegrid_264156971
+                jcr:created="{Date}2021-01-05T15:54:12.570-08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-01-05T15:54:12.570-08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="c-store/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="3"/>
+                </cq:responsive>
+                <image
+                    jcr:created="{Date}2021-01-05T15:54:16.032-08:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-01-05T16:44:23.193-08:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    fileReference="/content/dam/c-store/deli_sandwich.png"
+                    width="150">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="2"/>
+                    </cq:responsive>
+                </image>
+            </responsivegrid_264156971>
+            <responsivegrid_737067111
+                jcr:created="{Date}2021-01-05T16:12:38.097-08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-01-05T16:12:38.097-08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="c-store/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="4"/>
+                </cq:responsive>
+                <image
+                    jcr:created="{Date}2021-01-05T16:12:40.425-08:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-01-05T16:51:21.337-08:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    fileReference="/content/dam/c-store/deli_classic.png"
+                    width="300"/>
+                <text
+                    jcr:created="{Date}2021-01-05T16:34:12.436-08:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-01-05T16:59:19.184-08:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="c-store/components/text"
+                    text="&lt;h3 style=&quot;text-align: left;&quot;>BLT&lt;/h3>&#xd;&#xa;&lt;p style=&quot;text-align: left;&quot;>Sourdough, Bacon, Lettuce, Tomato&lt;/p>&#xd;&#xa;&lt;h3 style=&quot;text-align: left;&quot;>Reuben&lt;/h3>&#xd;&#xa;&lt;p style=&quot;text-align: left;&quot;>Rye, Corned Beef, Sauerkraut, Swiss&lt;/p>&#xd;&#xa;&lt;h3 style=&quot;text-align: left;&quot;>MeatBall&lt;/h3>&#xd;&#xa;&lt;p style=&quot;text-align: left;&quot;>French Roll, Marinara, Meatball, Cheddar&lt;/p>&#xd;&#xa;&lt;h3 style=&quot;text-align: left;&quot;>French Dip&lt;/h3>&#xd;&#xa;&lt;p style=&quot;text-align: left;&quot;>French Roll, Roast Beef, Swiss, Au Jus&lt;/p>&#xd;&#xa;"
+                    textIsRich="true"/>
+            </responsivegrid_737067111>
+            <responsivegrid_208144026
+                jcr:created="{Date}2021-01-06T09:26:23.610-08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-01-06T09:39:57.296-08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="c-store/components/responsivegrid"
+                tagId="promo">
+                <image
+                    jcr:created="{Date}2021-01-06T09:45:47.232-08:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-01-06T10:07:30.111-08:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    fileReference="/content/dam/c-store/deli_coffee.png"
+                    width="90">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="5"
+                            width="1"/>
+                    </cq:responsive>
+                </image>
+                <text
+                    jcr:created="{Date}2021-01-06T09:48:49.434-08:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-01-06T10:50:28.219-08:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="c-store/components/text"
+                    text="&lt;h2 style=&quot;text-align: left;&quot;>FREE COFFEE&lt;/h2>&#xd;&#xa;&lt;p style=&quot;text-align: left;&quot;>12oz, w/any sandwich&lt;/p>&#xd;&#xa;"
+                    textIsRich="true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="4"/>
+                    </cq:responsive>
+                </text>
+            </responsivegrid_208144026>
+        </r1c1>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured"/>
+        </cq:responsive>
+        <offline-config/>
+    </jcr:content>
+    <rep:policy/>
+</jcr:root>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:cssClass="aem-Layout aem-Layout--1x1"
+        cq:designPath="/libs/settings/wcm/designs/screens"
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2021-01-13T09:03:24.145-08:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/screens/core/templates/splitscreenchannel/1x1"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Recipe"
+        sling:resourceSuperType="screens/core/components/channel"
+        sling:resourceType="screens/core/components/multiscreenchannel"
+        forceRemoteContent="true">
+        <r1c1
+            cq:cssClass="aem-LayoutCell--1-1"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:created="{Date}2021-01-07T14:17:54.950-08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-01-07T14:17:54.950-08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="c-store/components/responsivegrid">
+                <image
+                    jcr:created="{Date}2021-01-07T14:18:05.820-08:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-01-07T14:21:53.117-08:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    fileReference="/content/dam/c-store/AdobeStock_212308503.jpeg"
+                    width="650">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="7"/>
+                    </cq:responsive>
+                </image>
+                <qr_code
+                    jcr:created="{Date}2021-01-07T14:23:30.626-08:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-01-13T09:03:24.142-08:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="c-store/components/qr-code"
+                    url="https://www.verybestbaking.com/libbys/recipes/libby-s-famous-pumpkin-pie/">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="10"/>
+                    </cq:responsive>
+                </qr_code>
+            </responsivegrid>
+        </r1c1>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured"/>
+        </cq:responsive>
+        <offline-config/>
+    </jcr:content>
+</jcr:root>

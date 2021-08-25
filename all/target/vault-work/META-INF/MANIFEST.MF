@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven
+Built-By: stevencherneff
+Build-Jdk: 11.0.8
+Implementation-Title: program2 - All
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.program2
+Content-Package-Roots: /apps/program2-packages,/apps/program2-vendor-pac
+ kages
+Content-Package-Description: All content package for program2
+Content-Package-Id: my_packages:aem-program2-project.all:0.0.1-SNAPSHOT
+Content-Package-Type: application
+

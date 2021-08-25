@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/program2" mode="merge"/>
+    <filter root="/content/program2" mode="merge"/>
+    <filter root="/content/dam/program2" mode="merge"/>
+    <filter root="/content/experience-fragments/program2" mode="merge"/>
+    <filter root="/content/dam/c-store" mode="merge"/>
+    <filter root="/content/screens/c-store" mode="merge"/>
+</workspaceFilter>

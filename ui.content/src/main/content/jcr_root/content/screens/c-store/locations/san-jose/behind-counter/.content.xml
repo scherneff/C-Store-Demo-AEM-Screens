@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-01-13T12:33:38.784-08:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/screens/core/templates/display"
+        jcr:lastModified="{Date}2021-01-13T08:48:40.357-08:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Behind Counter"
+        sling:resourceType="screens/core/components/display"
+        layoutNumCols="1"
+        layoutNumRows="1"
+        resolution="1920x1080">
+        <channels
+            jcr:primaryType="nt:unstructured"
+            idleText="Touch to interact!"
+            idleTimeout="{Long}300"
+            strategy="normal"
+            transition="normal">
+            <donut_menu
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="screens/core/components/channelassignment/absolute"
+                events="[load,idle]"
+                interruptionStrategy="always"
+                path="/content/screens/c-store/locations/california/donut-menu"
+                priority="1"
+                role="donut-menu"
+                showTooltip="false"/>
+            <burger_menu
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="screens/core/components/channelassignment/absolute"
+                events="[load,idle]"
+                interruptionStrategy="always"
+                path="/content/screens/c-store/locations/california/burger-menu"
+                priority="1"
+                role="burger-menu"
+                showTooltip="false"/>
+            <recipe
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="screens/core/components/channelassignment/absolute"
+                events="[load,idle]"
+                interruptionStrategy="always"
+                path="/content/screens/c-store/locations/california/recipe"
+                priority="1"
+                role="recipe"
+                showTooltip="false"/>
+            <deli_menu
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="screens/core/components/channelassignment/absolute"
+                events="[load,idle]"
+                interruptionStrategy="always"
+                path="/content/screens/c-store/locations/california/deli-menu"
+                priority="2"
+                role="deli-menu"
+                showTooltip="false"/>
+        </channels>
+    </jcr:content>
+    <device-config0/>
+</jcr:root>
