@@ -1,0 +1,130 @@
+/*
+ * ADOBE CONFIDENTIAL
+ *
+ * Copyright 2015 Adobe Systems Incorporated
+ * All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and may be covered by U.S. and Foreign Patents,
+ * patents in process, and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+@import (reference) "utilities.less";
+
+.aem-Layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  overflow: hidden;
+
+  padding: 0;
+  margin: 0;
+
+  clear: both;
+}
+
+.aem-Layout > .sequence {
+  padding: 0;
+}
+
+.aem-Layout > .aem-Grid,
+.aem-Layout > .responsivegrid,
+.aem-Layout > .responsivegrid > .aem-Grid,
+.aem-Layout > .sequence > .cq-Sequence,
+.aem-Layout .responsivegrid > .aem-Grid {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.cq-Editable-dom--container {
+  padding: 0 !important;
+}
+
+.aem-Layout > .sequence > .cq-Sequence > .target.cq-Sequence-item .campaign > .aem-Grid {
+  height: 100%;
+}
+
+/* in Editing mode */
+
+.aem-AuthorLayer-Edit,
+.aem-AuthorLayer-Layouting {
+
+  &.aem-Layout,
+  .aem-Layout {
+    position: static;
+    overflow: auto;
+
+    .cq-Sequence {
+      box-sizing: border-box;
+      padding: 20px !important;
+    }
+
+    // Background stripes and zigzag borders
+    .sequence.cq-Editable-dom--container {
+      position: relative;
+      margin: 0 auto;
+
+      &:before,
+      &:after {
+          position: absolute;
+          left: 19px;
+          width: ~"calc(100% - 2*19px)";
+          height: ~"calc(100% - 2*180px - 2*40px - 30px)";
+          content: '';
+          z-index: 1;
+      }
+      &:before {
+          top: 240px;
+          background: ~"0 200px / 20px 20px repeat-y linear-gradient(135deg, white 8px, transparent 0), 0 200px / 20px 20px repeat-y linear-gradient(45deg, white 8px, transparent 0)";
+      }
+      &:after {
+          top: 10px;
+          background: ~"100% 0 / 20px 20px repeat-y linear-gradient(-45deg, white 8px, transparent 0), 100% 0 / 20px 20px repeat-y linear-gradient(-135deg, white 8px, transparent 0)";
+      }
+    }
+
+    .new {
+      margin: 0;
+      padding: 0;
+      height: 180px;
+      background: white;
+      clear: both;
+    }
+
+  }
+
+  @media (min-width: 460px) {
+    .par.sequence.cq-Editable-dom--container { width: 380px; }
+  }
+  @media (min-width: 780px) {
+    .par.sequence.cq-Editable-dom--container { width: 680px; }
+  }
+  @media (min-width: 1100px) {
+    .par.sequence.cq-Editable-dom--container { width: 1000px; }
+  }
+  @media (min-width: 1420px) {
+    .par.sequence.cq-Editable-dom--container { width: 1320px; }
+  }
+  @media (min-width: 1740px) {
+    .par.sequence.cq-Editable-dom--container { width: 1640px; }
+  }
+  @media (min-width: 2060px) {
+    .par.sequence.cq-Editable-dom--container { width: 1960px; }
+  }
+  @media (min-width: 2380px) {
+    .par.sequence.cq-Editable-dom--container { width: 2280px; }
+  }
+  @media (min-width: 2700px) {
+    .par.sequence.cq-Editable-dom--container { width: 2600px; }
+  }
+}

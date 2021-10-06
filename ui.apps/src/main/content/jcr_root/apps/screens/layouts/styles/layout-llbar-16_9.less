@@ -1,0 +1,41 @@
+/*
+ * ADOBE CONFIDENTIAL
+ *
+ * Copyright 2020 Adobe Systems Incorporated
+ * All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and may be covered by U.S. and Foreign Patents,
+ * patents in process, and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+@import (reference) "sizes.less";
+@import (reference) "utilities.less";
+
+.aem-Layout.cq-Screens-channel--multizone > .aem-Layout-rlbar-16_9--main,
+.aem-Layout.cq-Screens-channel--multizone > .aem-Layout-rlbar-16_9--side {
+    &:extend(.u-aem-Layout-left);
+}
+
+/* This will gaurantee 16:9 for main zone with 1 pixel rounded for 1920 resolution */
+.aem-Layout.cq-Screens-channel--multizone > .aem-Layout-rlbar-16_9--main {
+    width: 75.9644%;
+    height: 75.9644%;
+}
+
+/* This will gaurantee 9:16 for side zone with 1 pixel rounded for 1920 resolution */
+.aem-Layout.cq-Screens-channel--multizone > .aem-Layout-rlbar-16_9--side {
+    width: 24.0356%;
+    height: 75.9644%;
+}
+
+.aem-Layout.cq-Screens-channel--multizone > .aem-Layout-rlbar-16_9--bottom {
+    width: 100%;
+    height: 24.0356%;
+}

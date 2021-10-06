@@ -1,0 +1,97 @@
+/*
+ * ADOBE CONFIDENTIAL
+ *
+ * Copyright 2015 Adobe Systems Incorporated
+ * All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and may be covered by U.S. and Foreign Patents,
+ * patents in process, and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+@font-face {
+  font-family: DINMittelschriftStd;
+  src: url("/content/dam/c-store/fonts/DINMittelschriftStd.otf");
+}
+
+.aem-AuthorLayer-Edit,
+.aem-AuthorLayer-Targeting,
+.aem-AuthorLayer-Layouting,
+.aem-AuthorLayer-Design,
+.aem-AuthorLayer-Scaffolding,
+.aem-AuthorLayer-Developer,
+.aem-AuthorLayer-Timewarp {
+
+  > body {
+    background-color: #1a1818;
+    padding: 0px;
+  }
+}
+
+body {
+    background: url("/content/dam/c-store/burger_menu_bg.jpg?r=1") no-repeat;
+    background-size: 810px auto;
+}
+
+.aem-Layout {
+  background-color: #1a1818;
+  font-family: funkydori, helvetica, arial;
+  color: #fff;
+  padding: 0px 10px;
+}
+
+#burgers {
+  position: absolute;
+  left: 110px;
+  top: 370px;
+  width: 600px;
+  text-align: left;
+}
+
+.burger-item-row {
+    position: relative;
+    line-height: 60px;
+}
+
+.burger-item-label {
+	font-size: 40px;
+}
+
+.burger-item-price {
+	font-family: DINMittelschriftStd;
+    position: absolute;
+    right: 0px;
+    top: -10px;
+  	font-size: 30px;
+}
+
+.burger-item-label, .burger-item-price,.burger-item-linethrough {
+    transition: all 0.5s ease;
+}
+
+.sold-out {
+    color: red;
+}
+
+.prominent {
+    transform: scale(1.1);
+}
+
+.burger-item-linethrough {
+	position: absolute;
+    width: 100%;
+    top: 15px;
+    left: 0px;
+    border-top: 1px solid red;
+    opacity: 0;
+}
+
+.burger-item-linethrough.sold-out {
+    opacity: 1;
+}

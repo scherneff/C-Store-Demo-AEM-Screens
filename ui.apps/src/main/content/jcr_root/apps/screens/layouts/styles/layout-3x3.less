@@ -1,0 +1,87 @@
+/*
+ * ADOBE CONFIDENTIAL
+ *
+ * Copyright 2015 Adobe Systems Incorporated
+ * All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and may be covered by U.S. and Foreign Patents,
+ * patents in process, and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+@import (reference) "layout.less";
+@import (reference) "sizes.less";
+@import (reference) "utilities.less";
+
+/**
+ * Defines a simple 3x3 layout (3 rows, 3 columns)
+ *
+ */
+.aem-Layout.aem-Layout--3x3 > .aem-LayoutCell--1-1,
+.aem-Layout.aem-Layout--3x3 > .aem-LayoutCell--1-2,
+.aem-Layout.aem-Layout--3x3 > .aem-LayoutCell--1-3,
+.aem-Layout.aem-Layout--3x3 > .aem-LayoutCell--2-1,
+.aem-Layout.aem-Layout--3x3 > .aem-LayoutCell--2-2,
+.aem-Layout.aem-Layout--3x3 > .aem-LayoutCell--2-3,
+.aem-Layout.aem-Layout--3x3 > .aem-LayoutCell--3-1,
+.aem-Layout.aem-Layout--3x3 > .aem-LayoutCell--3-2,
+.aem-Layout.aem-Layout--3x3 > .aem-LayoutCell--3-3 {
+  &:extend(.u-aem-Layout-left);
+}
+
+.aem-Layout.aem-Layout--3x3 > .aem-LayoutCell--1-1 {
+  &:extend(.u-aem-Layout-width1of3);
+  &:extend(.u-aem-Layout-height1of3);
+}
+
+.aem-Layout.aem-Layout--3x3 > .aem-LayoutCell--1-2 {
+  &:extend(.u-aem-Layout-width2of3);
+  &:extend(.u-aem-Layout-height1of3);
+}
+
+.aem-Layout.aem-Layout--3x3 > .aem-LayoutCell--1-3 {
+  &:extend(.u-aem-Layout-width1of1);
+  &:extend(.u-aem-Layout-height1of3);
+}
+
+.aem-Layout.aem-Layout--3x3 > .aem-LayoutCell--2-1 {
+  &:extend(.u-aem-Layout-width1of3);
+  &:extend(.u-aem-Layout-height2of3);
+}
+
+.aem-Layout.aem-Layout--3x3 > .aem-LayoutCell--2-2 {
+  &:extend(.u-aem-Layout-width2of3);
+  &:extend(.u-aem-Layout-height2of3);
+}
+
+.aem-Layout.aem-Layout--3x3 > .aem-LayoutCell--2-3 {
+  &:extend(.u-aem-Layout-width3of3);
+  &:extend(.u-aem-Layout-height2of3);
+}
+
+.aem-Layout.aem-Layout--3x3 > .aem-LayoutCell--3-1 {
+  &:extend(.u-aem-Layout-width1of3);
+  &:extend(.u-aem-Layout-height1of1);
+}
+
+.aem-Layout.aem-Layout--3x3 > .aem-LayoutCell--3-2 {
+  &:extend(.u-aem-Layout-width2of3);
+  &:extend(.u-aem-Layout-height1of1);
+}
+
+.aem-Layout.aem-Layout--3x3 > .aem-LayoutCell--3-3 {
+  &:extend(.u-aem-Layout-width1of1);
+  &:extend(.u-aem-Layout-height1of1);
+}
+
+.aem-Layout.aem-Layout--3x3 > .aem-LayoutCell--3-3::after {
+  content: '';
+  display: block;
+  &:extend(.u-aem-Layout-clearLeft);
+}
