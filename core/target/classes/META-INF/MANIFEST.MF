@@ -1,11 +1,11 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1629825111064
+Bnd-LastModified: 1633547616920
 Bundle-Category: program2
 Bundle-Description: "Core bundle for program2"
 Bundle-ManifestVersion: 2
 Bundle-Name: program2 - Core
 Bundle-SymbolicName: aem-program2-project.core
-Bundle-Version: 0.0.1.20210824171151064
+Bundle-Version: 0.0.1.20211006191336920
 Created-By: 11.0.8 (Oracle Corporation)
 Export-Package: com.program2.core.filters;version="1.0";uses:="javax.s
  ervlet",com.program2.core.listeners;version="1.0";uses:="org.osgi.ser
